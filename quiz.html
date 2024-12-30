@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./quiz.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&family=Ga+Maamli&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&family=Ga+Maamli&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="quiz">
+        <div>
+            <h1>Quiz App</h1>
+        </div>
+        <div class="wrapper">
+            <div class="container" onsubmit="findSubject(event)">
+                <form action="">
+                    <div>
+                    <input type="text" placeholder="Your name" id="name" required>
+                    </div>
+                    <div class="form-element">
+                        <label>Subject</label>
+                        <select name="subject" id="subject">
+                            <option value="Science">Science</option>
+                            <option value="Programming">Programming</option>
+                            <option value="Politics">Politics</option>
+                        </select>
+                    </div>
+                    <div>
+                        <input type="submit" value="Proceed" class="submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="questionWrapper">
+        <div id="questions"></div>
+    </div>
+   
+    <div id="scores"></div>
+  <script src="quiz.js"></script>
+</body>
+</html>
